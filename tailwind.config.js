@@ -10,6 +10,12 @@ module.exports = {
       backgroundImage: {
         dotted: "url('/public/bg patterns.png')",
       },
+      backgroundColor: {
+        matteYellow: "#FFE68C",
+      },
+      borderColor: {
+        yellowDark: "#EECD56",
+      },
     },
   },
   plugins: [],
