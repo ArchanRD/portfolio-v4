@@ -11,6 +11,7 @@ module.exports = {
         dotted: "url('/public/bg patterns.png')",
       },
       backgroundColor: {
+        customPink: "#FFC9F0",
         matteYellow: "#FFE68C",
       },
       borderColor: {
