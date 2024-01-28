@@ -13,6 +13,7 @@ module.exports = {
       backgroundColor: {
         customPink: "#FFC9F0",
         matteYellow: "#FFE68C",
+        matteBlue: "#9DDCFF",
       },
       borderColor: {
         yellowDark: "#EECD56",

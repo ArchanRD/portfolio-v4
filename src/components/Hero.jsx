@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,9 +23,11 @@ const Hero = () => {
         develop top notch websites
       </h2>
       <p className="mt-4 font-inter text-lg">
-      Building standout websites using cutting-edge tech for a strong digital footprint
+      I'm <strong>Archan Dhrangadharia</strong>, building standout websites using cutting-edge tech for a strong digital footprint
       </p>
-      <button className="bg-gray-800 px-3 py-2 text-white font-inter font-semibold mt-4 hover:bg-gray-900">Linkedin</button>
+      <Link to="https://www.linkedin.com/in/archan-dhrangadharia-ba67a0227/" target="_blank">
+      <button className="bg-gray-800 px-3 py-2 text-white font-inter font-semibold mt-4 hover:bg-gray-900 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">Linkedin</button>
+      </Link>
     </div>
   );
 };
