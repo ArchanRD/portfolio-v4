@@ -14,7 +14,7 @@ const ProjectCard = ({
   buttonLink,
 }) => {
   return (
-    <div className="border-2 border-gray-900 p-4 rounded-lg">
+    <div className="border-2 border-gray-900 p-4 rounded-lg md:w-[300px] xl:w-[380px]">
       <img
         src={image}
         alt="project image"
@@ -25,7 +25,7 @@ const ProjectCard = ({
         className="rounded-lg object-cover"
       />
       <div className="flex flex-wrap gap-4 items-center justify-between mt-4">
-        <h3 className="font-handlee text-xl font-bold">{title}</h3>
+        <h3 className="font-handlee text-xl font-bold xl:text-2xl">{title}</h3>
         <Link to={buttonLink}>
           <button
             style={{

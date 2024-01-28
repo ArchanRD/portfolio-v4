@@ -3,8 +3,8 @@ import ProjectCard from "./Cards/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="mobile-480:w-[400px] mobile-480:mx-auto">
-      <h2 className="mt-20 font-handlee font-bold text-2xl bg-customPink inline-block">
+    <div className="mobile-480:w-[400px] mobile-480:mx-auto md:w-auto md:mx-10">
+      <h2 className="mt-20 font-handlee font-bold text-2xl bg-customPink inline-block xl:text-3xl">
         Featured Projects
       </h2>
       <img
@@ -14,18 +14,19 @@ const Projects = () => {
         height={50}
         className="-rotate-90 my-8"
       />
-      <p className="font-inter text-lg text-gray-800">
+      <p className="font-inter text-lg text-gray-800 xl:text-xl">
         Worked on several projects in technologies like React.js, Next.js,
         Laravel, PHP.
       </p>
+      <button className="mt-5 bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max mr-auto hidden lg:block xl:text-xl">Show all projects</button>
 
-      <div className="mt-7 flex flex-col gap-4">
+      <div className="mt-7 flex flex-col gap-4 md:flex-row md:flex-wrap">
         {/* Card 1 */}
         <ProjectCard
           image="/projectImages/wigle.jpg"
           imageWidth="380"
           imageHeight="200"
-          title="Cloth renting app - Wigle"
+          title="Cloth renting app"
           buttonText="View project"
           buttonBgColor="#F072CD"
           buttonBorderColor="#DB4A90"
@@ -72,8 +73,8 @@ const Projects = () => {
             ["API", "#6C22A63c", "#6962AD"],
           ]}
         />
-        <button className="bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">Show all projects</button>
       </div>
+        <button className="mt-5 lg:hidden bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">Show all projects</button>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between py-12 w-full mx-auto mobile-480:w-[400px] mobile-480:mx-auto">
+    <div className="flex justify-between py-12 w-full mx-auto mobile-480:w-[400px] mobile-480:mx-auto sm:w-3/4 md:w-auto md:mx-10 lg:mx-0 lg:w-auto lg:box-border">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

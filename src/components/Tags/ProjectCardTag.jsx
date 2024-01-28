@@ -9,7 +9,7 @@ const ProjectCardTag = ({ name, bgColor, borderColor }) => {
         borderColor: `${borderColor}`,
         color: `${borderColor}`
       }}
-      className="font-inter text-xs rounded-xl border px-2"
+      className="font-inter text-xs rounded-xl border px-2 xl:text-md"
     >
       {name}
     </div>

@@ -3,8 +3,8 @@ import WhatDoIdoCard from "./Cards/WhatDoIdoCard";
 
 const WhatIDo = () => {
   return (
-    <div className="mobile-480:w-[400px] mobile-480:mx-auto">
-      <h2 className="mt-20 font-handlee font-bold text-2xl bg-blue-200 inline-block">
+    <div className="mt-20 mobile-480:w-[400px] mobile-480:mx-auto md:w-auto md:mx-10 xl:mr-auto">
+      <h2 className="font-handlee font-bold text-2xl bg-blue-200 w-max xl:text-3xl">
         What i do?
       </h2>
       <img
@@ -14,7 +14,7 @@ const WhatIDo = () => {
         height={50}
         className="-rotate-90 mt-8"
       />
-      <div className="py-5">
+      <div className="py-5 md:flex md:flex-wrap lg:justify-center xl:w-full">
         {/* Card 1 */}
         <WhatDoIdoCard
           image={"/CoffeeCup.png"}
