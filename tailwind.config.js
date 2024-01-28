@@ -8,7 +8,7 @@ module.exports = {
         handlee: ["Handlee", "sans-serif"],
       },
       backgroundImage: {
-        dotted: "url('/public/bg patterns.png')",
+        dotted: "url('/public/bg patterns 2.png')",
       },
       backgroundColor: {
         customPink: "#FFC9F0",

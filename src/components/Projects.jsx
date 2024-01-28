@@ -29,6 +29,7 @@ const Projects = () => {
           buttonText="View project"
           buttonBgColor="#F072CD"
           buttonBorderColor="#DB4A90"
+          buttonLink="/project/wigle"
           key={1}
           tags={[
             ["Laravel", "#FFB5343c", "#FF004D"],
@@ -46,6 +47,7 @@ const Projects = () => {
           buttonText="View project"
           buttonBgColor="#5AB5E8"
           buttonBorderColor="#3192c9"
+          buttonLink="/project/eccommerce"
           key={2}
           tags={[
             ["PHP", "#FFB5343c", "#FF004D"],
@@ -53,21 +55,24 @@ const Projects = () => {
             ["Javascript", "#E26EE53c", "#7E30E1"],
           ]}
         />
-        {/* Card 3 */}
-        <ProjectCard
-          image="/projectImages/zomato-preview.png"
+         {/* Card 3 */}
+         <ProjectCard
+          image="/projectImages/pokedex.png"
           imageWidth="380"
           imageHeight="200"
-          title="Zomato Clone"
+          title="Pokedex API"
           buttonText="View project"
-          buttonBgColor="#AC7D88"
-          buttonBorderColor="#85586F"
+          buttonBgColor="#6962AD"
+          buttonBorderColor="#6C22A6"
+          buttonLink="/project/pokedex"
           key={3}
           tags={[
             ["HTML", "#9ADE7B59", "#508D69"],
             ["CSS", "#FFB5343c", "#FF004D"],
+            ["API", "#6C22A63c", "#6962AD"],
           ]}
         />
+        <button className="bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">Show all projects</button>
       </div>
     </div>
   );
