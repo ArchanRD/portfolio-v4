@@ -26,9 +26,6 @@ const Navbar = () => {
         </Link>
       </motion.div>
       <div className="flex gap-2 font-inter text-lg text-gray-700">
-        <Link to={"/#about"}>
-          <p className=" hover:text-gray-800 active:text-gray-900">About</p>
-        </Link>
         <Link to={"/#projects"}>
           <p className=" hover:text-gray-800 active:text-gray-900">Projects</p>
         </Link>
