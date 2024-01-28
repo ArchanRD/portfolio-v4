@@ -9,6 +9,7 @@ module.exports = {
       },
       backgroundImage: {
         dotted: "url('/public/bg patterns 2.png')",
+        dotted4x: "url('/public/bg patterns 4x.png')",
       },
       backgroundColor: {
         customPink: "#FFC9F0",
@@ -18,6 +19,9 @@ module.exports = {
       borderColor: {
         yellowDark: "#EECD56",
       },
+      screens:{
+        'mobile-480': '480px',
+      }
     },
   },
   plugins: [],

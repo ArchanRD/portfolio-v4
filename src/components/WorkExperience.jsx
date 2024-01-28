@@ -4,7 +4,7 @@ import WorkCard from "./Cards/WorkCard";
 const WorkExperience = () => {
   return (
     <div className="mt-20">
-      <div>
+      <div className="mobile-480:w-[400px] mobile-480:mx-auto">
         <div>
           <h2 className="font-handlee bg-customPink font-bold text-2xl w-max">
             Work Experience

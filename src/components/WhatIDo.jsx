@@ -3,7 +3,7 @@ import WhatDoIdoCard from "./Cards/WhatDoIdoCard";
 
 const WhatIDo = () => {
   return (
-    <div>
+    <div className="mobile-480:w-[400px] mobile-480:mx-auto">
       <h2 className="mt-20 font-handlee font-bold text-2xl bg-blue-200 inline-block">
         What i do?
       </h2>

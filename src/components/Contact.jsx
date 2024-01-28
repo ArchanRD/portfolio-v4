@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mt-20 pb-20">
+    <div className="mt-20 pb-20 mobile-480:w-[400px] mobile-480:mx-auto">
       <div>
         <h2 className="mt-20 font-handlee font-bold text-2xl bg-customPink inline-block">
           Contact here

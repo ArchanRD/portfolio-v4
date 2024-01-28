@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="mt-11">
+    <div className="mt-11 mobile-480:w-[400px] mobile-480:mx-auto">
       <div className="flex items-center gap-4">
         <div>
           <img src="/Ink 1.png" className="" width={120} height={120} />

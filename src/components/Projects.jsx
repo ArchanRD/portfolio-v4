@@ -3,7 +3,7 @@ import ProjectCard from "./Cards/ProjectCard";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="mobile-480:w-[400px] mobile-480:mx-auto">
       <h2 className="mt-20 font-handlee font-bold text-2xl bg-customPink inline-block">
         Featured Projects
       </h2>
