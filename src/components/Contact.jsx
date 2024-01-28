@@ -27,7 +27,13 @@ const Contact = () => {
           >
             Name
           </label>
-          <input type="text" id="name" name="name" className="border-b w-full border-black bg-transparent focus:outline-none pl-2" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="border-b w-full border-black bg-transparent focus:outline-none pl-2"
+            required
+          />
         </div>
         <div className="flex mb-8">
           <label
@@ -36,7 +42,13 @@ const Contact = () => {
           >
             Email
           </label>
-          <input type="email" id="email" name="email" className="border-b w-full border-black bg-transparent focus:outline-none pl-2" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="border-b w-full border-black bg-transparent focus:outline-none pl-2"
+            required
+          />
         </div>
         <div className="flex mb-8">
           <label
@@ -45,9 +57,17 @@ const Contact = () => {
           >
             Message
           </label>
-          <input type="text" id="message" name="message" className="border-b w-full border-black bg-transparent focus:outline-none pl-2" required />
+          <input
+            type="text"
+            id="message"
+            name="message"
+            className="border-b w-full border-black bg-transparent focus:outline-none pl-2"
+            required
+          />
         </div>
-        <button className="rotate-2 bg-black text-white font-inter text-xl px-3 py-2">Send here</button>
+        <button className="rotate-2 bg-black border-2 border-transparent text-white font-inter text-xl px-3 py-2 hover:ring-2 hover:ring-offset-2 hover:ring-black hover:rotate-0 active:bg-white active:text-black focus:rotate-0 focus:ring-2 focus:ring-offset-2 focus:ring-black focus:border-black">
+          Send here
+        </button>
       </form>
     </div>
   );

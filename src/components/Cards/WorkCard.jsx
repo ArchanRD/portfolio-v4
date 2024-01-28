@@ -10,14 +10,14 @@ const WorkCard = ({
   shortDesc,
 }) => {
   return (
-    <div className="pb-2">
+    <div className="p-2 bg-white rounded-md shadow-md">
       <div className="flex flex-wrap items-center gap-1">
         <img
           src={companyLogo}
           alt="company logo"
           width={logoWidth}
           height={logoWidth}
-          className="bg-white rounded-md shadow-md"
+          className=""
         />
         <div>
           <h2 className="font-inter font-semibold text-md font-gray-800">
