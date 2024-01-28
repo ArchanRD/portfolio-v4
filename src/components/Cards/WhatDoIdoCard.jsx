@@ -21,7 +21,7 @@ const WhatDoIdoCard = ({
           backgroundColor: `${bgColor}`,
           borderColor: `${borderColor}`
         }}
-        className={`relative p-7 md:p-5 md:w-[300px] xl:w-[380px] xl:p-7 xl:border-8 flex justify-end flex-col border-8 md:border-4 ${rotationClass} rounded-lg h-96 w-80`}
+        className={`relative p-7 md:p-5 md:w-[300px] xl:w-[350px] xl:p-7 xl:border-8 flex justify-end flex-col border-8 md:border-4 ${rotationClass} rounded-lg h-96 w-80`}
       >
         <div
           style={{
