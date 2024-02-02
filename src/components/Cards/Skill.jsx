@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Skill = ({name}) => {
-    console.log(name)
   return (
     <div className=' grid grid-cols-2 mt-5 border-t-2 broder-black py-2'>
         {name.map((langName, index) => {

@@ -64,7 +64,7 @@ const Skills = () => {
           <h2
             className={
               frontendActive
-                ? `bg-blue-500 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white  ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
@@ -74,7 +74,7 @@ const Skills = () => {
           <h2
             className={
               backendActive
-                ? `bg-blue-500 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
@@ -84,7 +84,7 @@ const Skills = () => {
           <h2
             className={
               osAndUI
-                ? `bg-blue-500 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
