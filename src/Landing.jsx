@@ -7,7 +7,7 @@ import WorkExperience from "./components/WorkExperience";
 
 function App() {
   return (
-    <div className="ml-7 pl-5 mr-5 md:px-0 mx-auto bg-no-repeat xl:max-w-7xl xl:mx-auto bg-cover mobile-480:w-[480px] mobile-480:mx-auto sm:w-full lg:mx-20 lg:w-auto  lg:bg-contain xl:bg-cover xl:px-4">
+    <div className="ml-7 pl-5 mr-5 md:px-0 bg-dot !bg-repeat !bg-5 border-l-2 border-black mx-auto xl:max-w-7xl xl:mx-auto mobile-480:w-[480px] mobile-480:mx-auto sm:w-full lg:mx-20 lg:w-auto  lg:bg-contain xl:bg-cover xl:px-4">
       <Navbar />
       <Hero />
       <WhatIDo />
