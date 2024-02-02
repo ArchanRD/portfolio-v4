@@ -14,7 +14,7 @@ const ProjectCard = ({
   buttonLink,
 }) => {
   return (
-    <div className="border-2 border-gray-900 p-4 rounded-lg md:w-[300px] xl:w-[380px]">
+    <div className="border-2 border-gray-900 p-4 rounded-lg md:w-[300px] xl:w-[350px]">
       <img
         src={image}
         alt="project image"

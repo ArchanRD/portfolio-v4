@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Resume from "../PDF's/Archan Resume 2023.pdf"
 
 const Hero = () => {
   return (
@@ -30,12 +31,12 @@ const Hero = () => {
           using cutting-edge tech for a strong digital footprint.
         </p>
         <Link
-          to="https://www.linkedin.com/in/archan-dhrangadharia-ba67a0227/"
+          to={Resume}
           target="_blank"
           className="w-max"
         >
           <button className="bg-gray-800 px-3 py-2 text-white font-inter font-semibold mt-4 hover:bg-gray-900 border border-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black">
-            Linkedin
+            Resume
           </button>
         </Link>
       </div>
