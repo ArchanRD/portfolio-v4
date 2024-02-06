@@ -4,6 +4,7 @@ import "./index.css";
 import Landing from "./Landing";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
+import AllProjects from "./components/AllProjects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
+  },
+  {
+    path: "/allprojects",
+    element: <AllProjects />
   },
   {
     path: "/project/:project",

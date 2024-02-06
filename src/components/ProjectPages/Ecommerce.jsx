@@ -66,7 +66,7 @@ const Ecommerce = () => {
               />
             </div>
             <a className="mt-4 inline-block" href="http://royalterrace.epizy.com/" target="_blank">
-              <button className="bg-gray-800 text-white font-inter font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Visit</button>
+              <button className="bg-gray-800 text-white font-inter font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Take a tour!</button>
             </a>
           </div>
         </div>

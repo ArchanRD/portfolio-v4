@@ -4,6 +4,7 @@ import Wigle from "./ProjectPages/Wigle";
 import Layout from "./Layout";
 import Navbar from "./Navbar";
 import Ecommerce from "./ProjectPages/Ecommerce";
+import PokdexAPI from "./ProjectPages/PokedexAPI";
 
 const ProjectPage = () => {
   const location = useLocation();
@@ -17,6 +18,8 @@ const ProjectPage = () => {
     return <Wigle />;
   } else if (projectName == "eccommerce") {
     return <Ecommerce />;
+  }else if (projectName == "pokedex") {
+    return <PokdexAPI />;
   } else {
     return (
       <Layout>

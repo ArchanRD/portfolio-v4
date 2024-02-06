@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./Cards/ProjectCard";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -18,7 +19,11 @@ const Projects = () => {
         Worked on several projects in technologies like React.js, Next.js,
         Laravel, PHP.
       </p>
-      <button className="mt-5 bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max mr-auto hidden lg:block xl:text-xl">Show all projects</button>
+      <Link to="/allprojects">
+        <button className="mt-5 bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max mr-auto hidden lg:block xl:text-xl">
+          Show all projects
+        </button>
+      </Link>
 
       <div className="mt-7 flex flex-col gap-4 md:flex-row md:flex-wrap">
         {/* Card 1 */}
@@ -52,12 +57,11 @@ const Projects = () => {
           key={2}
           tags={[
             ["PHP", "#FFB5343c", "#FF004D"],
-            ["Laravel", "#7BD3EA59", "#0B60B0"],
             ["Javascript", "#E26EE53c", "#7E30E1"],
           ]}
         />
-         {/* Card 3 */}
-         <ProjectCard
+        {/* Card 3 */}
+        <ProjectCard
           image="/projectImages/pokedex.png"
           imageWidth="380"
           imageHeight="200"
@@ -74,7 +78,11 @@ const Projects = () => {
           ]}
         />
       </div>
-        <button className="mt-5 lg:hidden bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">Show all projects</button>
+      <Link to="/allprojects">
+        <button className="mt-5 lg:hidden bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">
+          Show all projects
+        </button>
+      </Link>
     </div>
   );
 };

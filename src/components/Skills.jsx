@@ -8,7 +8,7 @@ const Skills = () => {
 
   // Base tailwind classes for buttons
   const baseClass =
-    "font-inter font-semibold bg-white shadow-md w-max py-2 px-6 rounded-lg cursor-pointer hover:bg-slate-50 active:bg-blue-600 active:text-white transition ease-in-out select-none";
+    "font-inter font-semibold bg-white shadow-md w-max py-2 px-6 rounded-lg cursor-pointer hover:bg-slate-50 active:text-white  active:bg-blue-600 transition ease-in-out select-none";
 
   const handleActive = (event) => {
     const button = event.target.innerHTML.toLowerCase();
@@ -41,8 +41,7 @@ const Skills = () => {
   ];
 
   const backendSkills = ["Laravel", "PHP", "MySQL", "MongoDB", "Mongoose"];
-  const OSandUI = ["Ubuntu", "Figma", "Canva"]
-
+  const OSandUI = ["Ubuntu", "Figma", "Canva"];
 
   return (
     <div className="mt-20">
@@ -64,7 +63,7 @@ const Skills = () => {
           <h2
             className={
               frontendActive
-                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `!bg-blue-600 text-white hover:!bg-blue-600  ${baseClass}`
                 : `bg-white  ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
@@ -74,7 +73,7 @@ const Skills = () => {
           <h2
             className={
               backendActive
-                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `!bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
@@ -84,7 +83,7 @@ const Skills = () => {
           <h2
             className={
               osAndUI
-                ? `bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
+                ? `!bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
@@ -96,7 +95,6 @@ const Skills = () => {
         {frontendActive && <Skill name={frontendSkills} />}
         {backendActive && <Skill name={backendSkills} />}
         {osAndUI && <Skill name={OSandUI} />}
-        
       </div>
     </div>
   );
