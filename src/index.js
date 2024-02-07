@@ -5,6 +5,7 @@ import Landing from "./Landing";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import AllProjects from "./components/AllProjects";
+import FilterProjects from "./components/FilterProjects";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <div>Error</div>
+  },
+  {
+    path: "/filter/:tag",
+    element: <FilterProjects />
   }
 ]);
 
