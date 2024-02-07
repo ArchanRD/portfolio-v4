@@ -86,7 +86,7 @@ const AllProjects = () => {
             buttonText="View project"
             buttonBgColor="#FF6969"
             buttonBorderColor="#C70039"
-            buttonLink="/project/pokedex"
+            buttonLink="/project/netflix"
             key={5}
             tags={[
               ["HTML", "#9ADE7B59", "#508D69"],
@@ -120,7 +120,7 @@ const AllProjects = () => {
             buttonText="View project"
             buttonBgColor="#576CBC"
             buttonBorderColor="#0B2447"
-            buttonLink="/project/quotes"
+            buttonLink="/project/js-calculator"
             key={5}
             tags={[
               ["HTML", "#9ADE7B59", "#508D69"],

@@ -5,6 +5,10 @@ import Layout from "./Layout";
 import Navbar from "./Navbar";
 import Ecommerce from "./ProjectPages/Ecommerce";
 import PokdexAPI from "./ProjectPages/PokedexAPI";
+import Zomato from "./ProjectPages/Zomato";
+import Netflix from "./ProjectPages/Netflix";
+import Quotes from "./ProjectPages/Quotes";
+import Calculator from "./ProjectPages/Calculator";
 
 const ProjectPage = () => {
   const location = useLocation();
@@ -18,8 +22,16 @@ const ProjectPage = () => {
     return <Wigle />;
   } else if (projectName == "eccommerce") {
     return <Ecommerce />;
-  }else if (projectName == "pokedex") {
+  } else if (projectName == "pokedex") {
     return <PokdexAPI />;
+  } else if (projectName == "zomato") {
+    return <Zomato />;
+  } else if (projectName == "netflix") {
+    return <Netflix />;
+  } else if (projectName == "quotes") {
+    return <Quotes />;
+  } else if (projectName == "js-calculator") {
+    return <Calculator />;
   } else {
     return (
       <Layout>

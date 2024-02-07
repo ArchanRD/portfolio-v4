@@ -29,7 +29,7 @@ const Navbar = ({ hideMenu }) => {
         <div></div>
       ) : (
         <div className="flex gap-2 font-inter text-lg text-gray-700">
-          <Link to={"/#projects"}>
+          <Link to={"/allprojects"}>
             <p className=" hover:text-gray-800 active:text-gray-900">
               Projects
             </p>
