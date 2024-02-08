@@ -41,13 +41,13 @@ const ProjectCard = ({
       <div className="mt-4 flex gap-2 flex-wrap">
         {tags.map((tag, index) => {
           return (
-            <Link key={index} to={`/filter/${tag[0]}`}>
+            <a href={`/filter/${tag[0]}`} key={index}>
               <ProjectCardTag
                 name={tag[0]}
                 bgColor={tag[1]}
                 borderColor={tag[2]}
               />
-            </Link>
+            </a>
           );
         })}
       </div>

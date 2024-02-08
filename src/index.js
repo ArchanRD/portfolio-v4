@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ProjectPage from "./components/ProjectPage";
 import AllProjects from "./components/AllProjects";
 import FilterProjects from "./components/FilterProjects";
+import PageNotFound from "./components/PageNotFound";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>Error</div>
+    element: <PageNotFound />
   },
   {
     path: "/filter/:tag",

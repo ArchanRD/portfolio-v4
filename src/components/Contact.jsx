@@ -19,7 +19,7 @@ const Contact = () => {
           inquiries or anything else.
         </p>
       </div>
-      <form action="" className="mt-8 w-auto">
+      <form action="#" className="mt-8 w-auto">
         <div className="flex mb-8">
           <label
             htmlFor="name"
