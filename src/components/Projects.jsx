@@ -21,11 +21,17 @@ const Projects = () => {
         Worked on several projects in technologies like React.js, Next.js,
         Laravel, PHP.
       </p>
-      <Link to="/allprojects">
-        <button className="mt-5 bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max mr-auto hidden lg:block xl:text-xl">
+      <Link to="/allprojects" className="hidden lg:block">
+        <button className="mt-5 bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max mr xl:text-xl">
           Show all projects
         </button>
       </Link>
+      <div className="mt-4 bg-matteYellow p-2 lg:w-max">
+        <h2 className="font-handlee text-2xl font-bold">Tip?</h2>
+        <h2 className="font-handlee text-lg">
+          To filter the projects, click on the tags to search.
+        </h2>
+      </div>
 
       <div className="mt-7 flex flex-col gap-4 md:flex-row md:flex-wrap">
         {projects.slice(0, 3).map((project) => {
@@ -50,7 +56,7 @@ const Projects = () => {
         <button className="mt-5 lg:hidden bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">
           Show all projects
         </button>
-      </Link> 
+      </Link>
     </div>
   );
 };
