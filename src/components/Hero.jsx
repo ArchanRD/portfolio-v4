@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Resume from "../PDF's/Archan Resume 2023.pdf"
+import Resume from "../PDF's/Archan Resume 2024.pdf"
 
 const Hero = () => {
   return (
