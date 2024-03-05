@@ -28,9 +28,10 @@ const Projects = () => {
       </Link>
 
       <div className="mt-7 flex flex-col gap-4 md:flex-row md:flex-wrap">
-        {projects.slice(0, 2).map((project) => {
+        {projects.slice(0, 3).map((project) => {
           return (
             <ProjectCard
+              projectLink={project.projectLink}
               image={project.image}
               imageWidth={project.imageWidth}
               imageHeight={project.imageHeight}
@@ -49,7 +50,7 @@ const Projects = () => {
         <button className="mt-5 lg:hidden bg-matteYellow font-handlee font-bold text-lg py-1 px-2 w-max ml-auto">
           Show all projects
         </button>
-      </Link>
+      </Link> 
     </div>
   );
 };

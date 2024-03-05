@@ -17,6 +17,7 @@ const AllProjects = () => {
           {projects.map((project) => {
             return (
               <ProjectCard
+                projectLink={project.projectLink}
                 image={project.image}
                 imageWidth={project.imageWidth}
                 imageHeight={project.imageHeight}
