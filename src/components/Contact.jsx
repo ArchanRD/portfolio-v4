@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_sf5fdu8", "template_svilbs8", form.current, {
+        publicKey: "d_zPiJwge5DkQhugN",
+      })
+      .then(
+        () => {
+          toast.success("Email sent successfully");
+          console.log("done");
+          form.current.reset();
+        },
+        (error) => {
+          toast.error("Error sending email");
+          console.log("error");
+        }
+      );
+  };
   return (
     <div className="mt-20 pb-20 mobile-480:w-[400px] mobile-480:mx-auto md:w-auto md:mx-10 md:flex md:flex-1 md:flex-wrap md:items-end md:justify-between">
       <div className="md:w-1/2">
@@ -19,7 +43,7 @@ const Contact = () => {
           inquiries or anything else.
         </p>
       </div>
-      <form action="#" className="mt-8 w-auto">
+      <form action="#" className="mt-8 w-auto" ref={form} onSubmit={sendEmail}>
         <div className="flex mb-8">
           <label
             htmlFor="name"
@@ -30,7 +54,7 @@ const Contact = () => {
           <input
             type="text"
             id="name"
-            name="name"
+            name="from_name"
             className="border-b w-full border-black bg-transparent focus:outline-none pl-2 xl:text-lg"
             required
           />
@@ -45,7 +69,7 @@ const Contact = () => {
           <input
             type="email"
             id="email"
-            name="email"
+            name="email_id"
             className="border-b w-full border-black bg-transparent focus:outline-none pl-2 xl:text-lg"
             required
           />
@@ -69,6 +93,7 @@ const Contact = () => {
           Send here
         </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
