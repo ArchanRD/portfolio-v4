@@ -40,7 +40,7 @@ const Skills = () => {
     "Strapi",
   ];
 
-  const backendSkills = ["Laravel", "PHP", "MySQL", "MongoDB", "Mongoose"];
+  const backendSkills = ["Laravel", "PHP", "MySQL", "MongoDB", "Mongoose", "Docker"];
   const OSandUI = ["Ubuntu", "Figma", "Canva"];
 
   return (

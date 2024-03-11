@@ -11,14 +11,6 @@ const Navbar = ({ hideMenu }) => {
         transition={{ duration: 0.7, ease: "easeInOut" }}
         className="flex items-center gap-2"
       >
-        <motion.span
-          initial={{ opacity: 1 }}
-          animate={{ opacity: [1, 0, 1] }}
-          transition={{ duration: 2, ease: "easeInOut", delay: 1 }}
-          className="material-symbols-outlined text-yellow-400"
-        >
-          radio_button_checked
-        </motion.span>
         <Link to={"/"}>
           <h1 className="font-handlee text-gray-800 text-2xl font-bold">
             archan
