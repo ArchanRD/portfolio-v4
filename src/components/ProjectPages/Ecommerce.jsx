@@ -13,10 +13,10 @@ const Ecommerce = () => {
           className="rounded-xl h-auto lg:max-w-3xl"
         />
         <div className="">
-          <h2 className="font-inter text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
+          <h2 className="font-generalSans text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
             Royal Terrace - An ecommerce and blog site
           </h2>
-          <p className="mt-4 font-inter text-sm mobile-480:text-md lg:text-base xl:text-lg">
+          <p className="mt-4 font-generalSans text-sm mobile-480:text-md lg:text-base xl:text-lg">
             <strong>Royal terrace</strong> is an basic ecommerce site. The
             website not only boasts a robust e-commerce infrastructure but also
             features a sophisticated blogging section, elevating user engagement
@@ -24,7 +24,7 @@ const Ecommerce = () => {
             ability to craft and share their own compelling blog posts,
             enriching the communal blog section with diverse perspectives
           </p>
-          <p className="mt-4 font-inter text-sm mobile-480:text-md lg:text-base xl:text-lg">
+          <p className="mt-4 font-generalSans text-sm mobile-480:text-md lg:text-base xl:text-lg">
             Royal Terrace stands on the robust foundation of{" "}
             <span className="bg-green-100 rounded">
               PHP, MySQL, JavaScript, HTML, and CSS.
@@ -34,7 +34,7 @@ const Ecommerce = () => {
             freelancing project.
           </p>
 
-          <div className="font-inter mt-4 pb-4">
+          <div className="font-generalSans mt-4 pb-4">
             <h2 className="text-lg font-semibold mobile-480:text-xl lg:text-2xl">
               Technologies used:{" "}
             </h2>
@@ -66,7 +66,7 @@ const Ecommerce = () => {
               />
             </div>
             <a className="mt-4 inline-block" href="http://royalterrace.epizy.com/" target="_blank">
-              <button className="bg-gray-800 text-white font-inter font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Take a tour!</button>
+              <button className="bg-gray-800 text-white font-generalSans font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Take a tour!</button>
             </a>
           </div>
         </div>

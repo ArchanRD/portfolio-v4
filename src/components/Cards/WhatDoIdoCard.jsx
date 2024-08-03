@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion"
 
 const WhatDoIdoCard = ({
   image,
@@ -40,10 +41,10 @@ const WhatDoIdoCard = ({
           className="mb-5"
         />
         <div>
-          <h3 className="font-inter font-semibold text-3xl text-gray-800 md:text-2xl xl:text-3xl">
+          <h3 className="font-generalSans font-semibold text-3xl text-gray-800 md:text-2xl xl:text-3xl">
             {cardTitle}
           </h3>
-          <p className="font-inter text-md md:text-sm text-gray-700 mt-2 xl:text-lg">
+          <p className="font-generalSans text-md md:text-sm text-gray-700 mt-2 xl:text-lg">
             {cardParagraph}
           </p>
         </div>

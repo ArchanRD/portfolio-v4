@@ -1,56 +1,74 @@
 import React, { useState } from "react";
 import Skill from "./Cards/Skill";
+import { motion } from "framer-motion";
 
 const Skills = () => {
-  const [frontendActive, setfrontend] = useState(true);
-  const [backendActive, setbackend] = useState(false);
+  const [web, setweb] = useState(true);
+  const [aiml, setaiml] = useState(false);
   const [osAndUI, setOsAndUI] = useState(false);
 
   // Base tailwind classes for buttons
   const baseClass =
-    "font-inter font-semibold bg-white shadow-md w-max py-2 px-6 rounded-lg cursor-pointer hover:bg-slate-50 active:text-white  active:bg-blue-600 transition ease-in-out select-none";
+    "font-generalSans font-semibold bg-white shadow-md w-max py-2 px-6 rounded-lg cursor-pointer hover:bg-slate-50 active:text-white  active:bg-blue-600 transition ease-in-out select-none";
 
   const handleActive = (event) => {
     const button = event.target.innerHTML.toLowerCase();
 
-    if (button === "frontend") {
-      setfrontend(true);
-      setbackend(false);
+    if (button === "web") {
+      setweb(true);
+      setaiml(false);
       setOsAndUI(false);
-    } else if (button === "backend") {
-      setfrontend(false);
-      setbackend(true);
+    } else if (button === "ai/ml") {
+      setweb(false);
+      setaiml(true);
       setOsAndUI(false);
     } else {
-      setfrontend(false);
-      setbackend(false);
+      setweb(false);
+      setaiml(false);
       setOsAndUI(true);
     }
   };
 
   // Skills
-  const frontendSkills = [
-    " Javascript",
-    " React.js",
+  const webSkills = [
+    "React.js",
     "Next.js",
     "Tailwind",
-    "Bootstrap",
     "Framer motion",
     "Sanity",
-    "Strapi",
+    "Laravel",
+    "MySQL",
+    "MongoDB",
+    "Docker",
   ];
 
-  const backendSkills = ["Laravel", "PHP", "MySQL", "MongoDB", "Mongoose", "Docker"];
-  const OSandUI = ["Ubuntu", "Figma", "Canva"];
+  const aimlSKills = [
+    "Python",
+    "Pandas",
+    "Numpy",
+    "Matplotlib",
+    "Scikit-learn",
+  ];
+  const OSandUI = ["Ubuntu", "Figma", "Canva", "Git & Version control"];
 
   return (
     <div className="mt-20">
       <div className="mobile-480:w-[400px] mobile-480:mx-auto md:x-auto md:mx-10">
         <div>
-          <h2 className="font-handlee bg-customPink font-bold text-2xl w-max xl:text-3xl">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="font-handlee bg-customPink font-bold text-2xl w-max xl:text-3xl"
+          >
             Skills
-          </h2>
-          <img
+          </motion.h2>
+          <motion.img
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
             src="/arrow.png"
             alt="arrow"
             width={50}
@@ -58,29 +76,42 @@ const Skills = () => {
             className="-rotate-90 my-8"
           />
         </div>
+
         {/* Tabs  */}
         <div className="flex flex-wrap gap-2">
-          <h2
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "anticipate" }}
+            viewport={{ once: true }}
             className={
-              frontendActive
+              web
                 ? `!bg-blue-600 text-white hover:!bg-blue-600  ${baseClass}`
                 : `bg-white  ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
           >
-            Frontend
-          </h2>
-          <h2
+            Web
+          </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className={
-              backendActive
+              aiml
                 ? `!bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
                 : `bg-white ${baseClass}`
             }
             onClick={(event) => handleActive(event)}
           >
-            Backend
-          </h2>
-          <h2
+            AI/ML
+          </motion.h2>
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeInOut" }}
+            viewport={{ once: true }}
             className={
               osAndUI
                 ? `!bg-blue-600 text-white hover:!bg-blue-600 ${baseClass}`
@@ -89,11 +120,11 @@ const Skills = () => {
             onClick={(event) => handleActive(event)}
           >
             OS & UI
-          </h2>
+          </motion.h2>
         </div>
         {/* Skill Cards  */}
-        {frontendActive && <Skill name={frontendSkills} />}
-        {backendActive && <Skill name={backendSkills} />}
+        {web && <Skill name={webSkills} />}
+        {aiml && <Skill name={aimlSKills} />}
         {osAndUI && <Skill name={OSandUI} />}
       </div>
     </div>

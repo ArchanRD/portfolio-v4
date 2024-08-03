@@ -12,7 +12,7 @@ const AllProjects = () => {
     <Layout>
       <Navbar hideMenu={true} />
       <div>
-        <h2 className="font-inter text-2xl font-bold">All projects</h2>
+        <h2 className="font-generalSans text-2xl font-bold">All projects</h2>
         <div className="mt-7 flex flex-col gap-4 md:flex-row md:flex-wrap">
           {projects.map((project) => {
             return (

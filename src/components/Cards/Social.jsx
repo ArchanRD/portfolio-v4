@@ -1,12 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Social = ({ name, href, logoHref, profilePageHref }) => {
   return (
-    <div
-      className={`bg-white w-48 h-14 group group-hover:border-2 group-hover:border-black text-center rounded-md shadow-sm hover:shadow-md cursor-pointer transition ease-in-out duration-300`}
+    <motion.div
+      initial={{ opacity: 0, scale: 1.2 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: 0.4, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      className={`bg-white w-48 h-14 group group-hover:border-2 group-hover:border-black text-center rounded-md shadow-sm border border-gray-100 hover:shadow-md cursor-pointer transition ease-in-out duration-300`}
     >
       <a href={href} className="py-2 px-4 inline-block" target="_blank">
-        <div className="font-inter font-medium text-base flex gap-2 items-center w-max">
+        <div className="font-generalSans font-medium text-base flex gap-2 items-center w-max">
           {/* logo */}
           <img src={logoHref} alt="" className="h-8 lg:h-10" />
           <h2 className="lg:text-lg ">{name}</h2>
@@ -24,7 +29,7 @@ const Social = ({ name, href, logoHref, profilePageHref }) => {
           />
         </div>
       </a>
-    </div>
+    </motion.div>
   );
 };
 

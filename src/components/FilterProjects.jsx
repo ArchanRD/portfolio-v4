@@ -30,7 +30,7 @@ const FilterProjects = () => {
     return (
       <Layout>
         <Navbar />
-        <h2 className="w-max flex items-center gap-2 font-inter text-xl font-medium text-gray-800">
+        <h2 className="w-max flex items-center gap-2 font-generalSans text-xl font-medium text-gray-800">
           Projects with tag{" "}
           <ProjectCardTag
             bgColor="#1c1c1c"

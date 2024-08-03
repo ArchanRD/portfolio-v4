@@ -13,10 +13,10 @@ const PokdexAPI = () => {
           className="rounded-xl h-auto lg:max-w-3xl"
         />
         <div className="">
-          <h2 className="font-inter text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
+          <h2 className="font-generalSans text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
             Pokedex
           </h2>
-          <p className="mt-4 font-inter text-sm mobile-480:text-md lg:text-base xl:text-lg">
+          <p className="mt-4 font-generalSans text-sm mobile-480:text-md lg:text-base xl:text-lg">
             <strong>Pokedex</strong> is a mobile-friendly website that
             serves as a comprehensive repository for Pokemon information,
             leveraging one of the Pokedex APIs. The site is designed to be
@@ -27,7 +27,7 @@ const PokdexAPI = () => {
             information about various Pokemon species."
           </p>
 
-          <div className="font-inter mt-4 pb-4">
+          <div className="font-generalSans mt-4 pb-4">
             <h2 className="text-lg font-semibold mobile-480:text-xl lg:text-2xl">
               Technologies used:{" "}
             </h2>
@@ -54,7 +54,7 @@ const PokdexAPI = () => {
               />
             </div>
             <a className="mt-4 inline-block" href="https://pokedex-vercel-ttz7jywpb-archanrd.vercel.app/" target="_blank">
-              <button className="bg-gray-800 text-white font-inter font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Take a tour!</button>
+              <button className="bg-gray-800 text-white font-generalSans font-semibold py-2 px-6 border-2 border-transparent focus:ring focus:ring-offset-2 focus:ring-black">Take a tour!</button>
             </a>
           </div>
         </div>

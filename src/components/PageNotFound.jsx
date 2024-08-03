@@ -11,7 +11,7 @@ const PageNotFound = () => {
         <h2 className="font-handlee font-bold text-red-600 text-2xl sm:text-4xl">
           Oops!{" "}
         </h2>
-        <h2 className="font-inter text-lg sm:text-xl font-medium text-center text-gray-800">
+        <h2 className="font-generalSans text-lg sm:text-xl font-medium text-center text-gray-800">
           404: Page Lost in the Digital Bermuda Triangle
         </h2>
         <div className="flex items-center gap-2 mt-4">

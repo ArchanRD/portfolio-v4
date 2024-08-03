@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/allprojects",
-    element: <AllProjects />
+    element: <AllProjects />,
   },
   {
     path: "/project/:project",
@@ -25,12 +25,12 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <PageNotFound />
+    element: <PageNotFound />,
   },
   {
     path: "/filter/:tag",
-    element: <FilterProjects />
-  }
+    element: <FilterProjects />,
+  },
 ]);
 
 root.render(

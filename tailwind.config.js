@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        generalSans: ["General Sans", "Inter", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         handlee: ["Handlee", "sans-serif"],
       },
