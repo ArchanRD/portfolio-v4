@@ -9,13 +9,13 @@ const Zomato = () => {
       <Navbar hideMenu={true} />
       <div className="lg:max-w-3xl mx-auto">
         <img
-          src="/projectImages/eccomerce-preview.png"
+          src="/projectImages/zomato-preview.png"
           className="rounded-xl h-auto lg:max-w-3xl"
         />
         <div className="">
-          <h2 className="font-generalSans text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
-            Zomato clone
-          </h2>
+            <h2 className="font-generalSans text-lg mobile-480:text-xl lg:text-2xl xl:text-3xl font-semibold mt-5">
+              Zomato clone
+            </h2>
           <p className="mt-4 font-generalSans text-sm mobile-480:text-md lg:text-base xl:text-lg">
             A responsive, mobile-friendly website inspired by the popular
             platform, <strong>Zomato</strong>. This project was meticulously
