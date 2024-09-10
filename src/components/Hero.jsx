@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Resume from "../PDF's/Archan Resume 2024.pdf";
+import Resume from "../PDF's/Archan Resume 2024 updated.pdf";
 
 const Hero = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
@@ -20,6 +20,7 @@ const Hero = () => {
               className="md:h-auto md:w-32 lg:w-36"
               width={120}
               height={120}
+              alt="character"
             />
           </motion.div>
           <motion.div
