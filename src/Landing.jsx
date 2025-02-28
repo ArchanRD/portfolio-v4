@@ -21,6 +21,7 @@ function App() {
         <Socials />
         <Contact />
       </Layout>
+     
     </div>
   );
 }
