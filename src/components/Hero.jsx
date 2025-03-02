@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Resume from "../PDF's/Archan Dhrangadharia Resume 2025.pdf";
+import Resume from "../PDF's/Archan Dhrangadharia's Resume.pdf";
 
 const Hero = () => {
   const [hasAnimated, setHasAnimated] = useState(false);
